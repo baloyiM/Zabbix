@@ -164,8 +164,11 @@
                                     <name>BGP4 Peer(s)</name>
                                 </application>
                             </applications>
-                            <valuemap>
-                                <name>ciscoBgpPeerAdminStatus</name>
+                            <valuemap name = "ciscoBgpPeerAdminStatus">
+                                <value>1</value>
+                                <description>stop</description>
+                                <value>2</value>
+                                <description>start</description>
                             </valuemap>
                         </item_prototype>
                         <item_prototype>
@@ -439,8 +442,19 @@
                                     <name>BGP4 Peer(s)</name>
                                 </application>
                             </applications>
-                            <valuemap>
-                                <name>ciscoBgpPeerState</name>
+                            <valuemap name="ciscoBgpPeerState">
+                                 <value>1</value>
+                                 <description>idle</description>
+                                 <value>2</value>
+                                 <description>connect</description>
+                                 <value>3</value>
+                                 <description>active</description>
+                                 <value>4</value>
+                                 <description>opensent</description>
+                                 <value>5</value>
+                                 <description>openconfirm</description>
+                                 <value>6</value>
+                                 <description>established</description>
                             </valuemap>
                         </item_prototype>
                         <item_prototype>
